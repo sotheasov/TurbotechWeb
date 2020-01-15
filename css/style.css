@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: black;
+    font-family: khmer os freehand;
+    /* flex-wrap: nowrap; */
+
+}
+/* start css header */
+.navbar{
+
+    width: 100vw;
+    height: 30vh;
+    
+}
+#header{
+    width: 90vw;
+    height: 20vh;
+    margin: 0 auto;
+    background-color: brown;
+}
+#logo{
+    width: 20vw;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+#nav-about{
+    width: 70vw;
+    height: 50%;
+    background-color: coral;
+    float: right;
+}
+#nav-about > ul{
+    list-style-type: none;
+    font-size: 0;
+    height: 100%;
+    
+}
+#nav-about > ul > li{
+    display: inline-block;
+    background-color: teal;
+    font-size: initial;
+    height: 100%;
+    line-height: 7vh;
+    
+}
+#nav-about > ul > li > a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 10px;
+}
+#nav-about > ul > li > a:hover{
+    background-color: goldenrod;
+    color: black;
+}
+#nav{
+    width: 70vw;
+    height: 50%;
+    background-color: burlywood;
+    float: right;
+}
+/* end css header */
+.section-body{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    
+    /* flex-direction: column;   */
+    justify-content: space-evenly;
+    /* justify-content: right + safe; */
+    /* justify-content: unsafe; */
+    /* justify-content: space-around; */
+}
+
+.sidebar-left{
+    width: 100vw;
+    height: 100%;
+    background-color: aqua;
+}
+
+.section-center{
+    width: 100vw;
+    height: 100%;
+    background-color: blue;
+}
+
+.sidebar-right{
+    width: 100vw;
+    height: 100%;
+    background-color: yellow;
+}
+
+.footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: purple;
+}
+
+@media only screen and (max-width: 700px) {
+    .section-body{
+        width: 100vw;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .sidebar-left{
+        width: 90vw;
+        height: 100%;
+        margin: 0 auto;
+        background-color: aqua;
+    }
+
+    .section-center{
+        width: 80vw;
+        margin: 0 auto;
+        height: 100%;
+        background-color: blue;
+    }
+
+    .sidebar-right{
+        width: 90vw;
+        height: 100%;
+        margin: 0 auto;
+        background-color: yellow;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .section-body{
+        width: 100vw;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .sidebar-left{
+        width: 90vw;
+        height: 100%;
+        margin: 0 auto;
+        background-color: aqua;
+    }
+
+    .section-center{
+        width: 80vw;
+        margin: 0 auto;
+        height: 100%;
+        background-color:blue;
+    }
+
+    .sidebar-right{
+        width: 90vw;
+        height: 100%;
+        margin: 0 auto;
+        background-color: yellow;
+    }
+}
