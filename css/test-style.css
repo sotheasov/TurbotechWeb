@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    font-family: khmer os freehand;
+}
+/* start header */
+.navbar{
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    
+}
+#header{
+    
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 14%;
+    margin: 0 auto;
+    background-color: gray;
+}
+#header > div{
+    margin: 0 auto;
+    width: 42%;
+    float: left;
+}
+#header > div >a{
+    line-height: 15vh;
+    padding: 0 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    height: 13vh;
+    
+    
+}
+#header > div >a:hover{
+    border-bottom: 5px solid goldenrod;
+    display: inline-block;
+    color: black
+}
+.box{
+    position: static;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    background-color: brown;
+    margin: auto;
+    
+    
+    
+    
+    
+}
+/* end header */
+.body{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    /* flex-direction: row; */
+    /* flex-direction: column;    */
+    justify-content: space-evenly;
+    background-color: red;
+    /* justify-content: right + safe; */
+    /* justify-content: unsafe; */
+    /* justify-content: space-around; */
+}
+
+.footer{
+    width: 100vw;
+    height: 30vh;
+    background-color: palevioletred;
+}
+/* Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) { 
+.navbar{
+   
+    width: 100vw;
+    height: 1199.98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.body{
+
+}
+
+}
